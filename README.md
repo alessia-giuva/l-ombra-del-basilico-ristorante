@@ -11,3 +11,5 @@ Benvenuti nel repository ufficiale de **L'Ombra del Basilico**, un sito web mode
 ## 🌐 Demo Live
 Puoi visualizzare il sito in funzione qui:
 👉 [Vai al sito Live](https://alessia-giuva.github.io/l-ombra-del-basilico-ristorante/)
+
+Realizzato con ❤️ da [Alessia Giuva]

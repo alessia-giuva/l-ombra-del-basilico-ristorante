@@ -11,12 +11,12 @@ import { FormsModule } from '@angular/forms';
 export class Contatti {
 inviato = false;
 
-  // Assicurati che il nome sia esattamente questo:
+
   inviaMessaggio() {
     console.log('Messaggio inviato!');
     this.inviato = true;
     
-    // Opzionale: nasconde il messaggio di successo dopo 5 secondi
+  
     setTimeout(() => {
       this.inviato = false;
     }, 5000);

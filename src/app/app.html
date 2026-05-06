@@ -1,21 +1,18 @@
-<!-- NAVBAR STILE PIZZERIA MA TEMA BASILICO -->
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm nav-trasparente">
-  <div class="container">
+  <div class="container d-flex justify-content-between align-items-center flex-wrap">
+    
     <a class="navbar-brand fw-bold text-success d-flex align-items-center" routerLink="/">
-      <img src="images/logoo.png" alt="Logo" width="45" height="45" class="me-2 logo-navbar">
-      <!-- Ho rimosso l'icona bi-leaf se hai già il logo, per non affollare -->
-      L'OMBRA DEL BASILICO
+      <img src="images/logoo.png" alt="Logo" class="me-2 logo-navbar">
+      <span class="brand-text">L'OMBRA DEL BASILICO</span>
     </a>
 
-    <!-- 1. CONTROLLA QUI: Assicurati che data-bs-target sia identico all'id sotto -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <!-- 2. IL MENU: L'id deve essere esattamente 'navbarNav' -->
-    <!-- Ho aggiunto una variabile locale #nav per chiuderlo al click -->
+
     <div class="collapse navbar-collapse" id="navbarNav" #nav>
-      <ul class="navbar-nav ms-auto">
+     <ul class="navbar-nav ms-auto pt-3 pb-2">
         <li class="nav-item">
           <!-- 3. TRUCCO: (click)="nav.classList.remove('show')" serve a chiudere il menu quando clicchi una voce sul cellulare -->
           <a class="nav-link" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="nav.classList.remove('show')">Home</a>

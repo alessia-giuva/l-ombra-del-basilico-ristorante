@@ -1,4 +1,3 @@
-/* Colore Verde Basilico per il Brand */
 .text-success {
   color: #4E6B52 !important;
 }
@@ -34,41 +33,51 @@ main {
   min-height: 80vh;
 }
 
+
 .nav-trasparente {
-  background-color: rgba(30, 30, 30, 0.8) !important;
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  min-height: 75px; 
+  background-color: rgba(20, 20, 20, 0.95) !important;
+  position: sticky !important; /* Questo è il segreto */
+  top: 0;
+  width: 100%;
+  z-index: 2000;
 }
 
-/* Regole per il Logo */
 .logo-navbar {
   width: 45px;
   height: 45px;
-  transition: all 0.3s ease;
 }
 
-/* Gestione Mobile */
+/* MOBILE: Configurazione per l'effetto fisarmonica */
 @media (max-width: 991px) {
-  .navbar-brand-responsive {
-    margin-right: 0; /* Toglie spazio inutile a destra */
-    display: flex;
-    align-items: center;
-  }
-
   .brand-text {
-    font-size: 0.9rem; /* Testo più piccolo su mobile */
-    letter-spacing: -0.5px; /* Stringe leggermente le lettere */
+    font-size: 0.9rem;
+    white-space: nowrap;
   }
 
-  .logo-navbar {
-    width: 35px; /* Logo più piccolo su mobile */
-    height: 35px;
+  /* Rimuoviamo il posizionamento assoluto: ora il menu SPINGE il contenuto */
+  .navbar-collapse {
+    position: relative; 
+    width: 100%;
+    /* Aggiungiamo un bordo sopra per separarlo dal titolo quando è aperto */
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 10px;
+  }
+
+  .nav-link {
+    padding: 12px 0;
+    text-align: center; /* Opzionale: centra le scritte per un look più moderno */
   }
 }
 
-/* Per telefoni piccolissimi (sotto i 380px) */
-@media (max-width: 375px) {
-  .brand-text {
-    font-size: 0.8rem;
+/* DESKTOP: Le voci tornano in linea a destra */
+@media (min-width: 992px) {
+  .navbar-collapse {
+    border-top: none;
+    margin-top: 0;
   }
+}
+
+.hero-section {
+  height: calc(100vh - 75px); /* Opzionale: fa sì che la foto occupi tutto lo schermo rimasto */
 }

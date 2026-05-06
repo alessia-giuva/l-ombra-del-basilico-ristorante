@@ -8,7 +8,6 @@ import { CommonModule } from '@angular/common';
   styleUrl: './menu.css',
 })
 export class Menu {
-// Raggruppiamo tutto in un'unica variabile "menuCategorie"
 categorie = [
     {
       nome: 'Antipasti della Terra',

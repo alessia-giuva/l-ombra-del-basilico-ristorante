@@ -17,12 +17,12 @@
 }
 
 .google-map-container {
-  line-height: 0; /* Rimuove piccoli spazi bianchi sotto l'iframe */
-  filter: grayscale(20%) contrast(90%); /* Opzionale: rende la mappa più elegante e meno "accesa" */
-  border-top: 4px solid #4E6B52; /* Un richiamo al colore del brand */
+  line-height: 0; 
+  filter: grayscale(20%) contrast(90%); 
+  border-top: 4px solid #4E6B52; 
   transition: filter 0.3s ease;
 }
 
 .google-map-container:hover {
-  filter: grayscale(0%); /* Torna a colori pieni quando l'utente ci passa sopra */
+  filter: grayscale(0%); 
 }

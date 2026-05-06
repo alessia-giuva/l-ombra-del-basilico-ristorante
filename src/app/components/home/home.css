@@ -3,13 +3,13 @@
   background: url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=2000') no-repeat center center;
   background-size: cover;
   position: relative;
-  margin-top: -76px; /* Per far finire l'immagine sotto la navbar trasparente */
+  margin-top: -76px; 
 }
 
 .overlay {
   position: absolute;
   top: 0; left: 0; width: 100%; height: 100%;
-  background: rgba(0, 0, 0, 0.6); /* Scurisce l'immagine per far leggere il testo */
+  background: rgba(0, 0, 0, 0.6); 
 }
 
 .content {
@@ -18,7 +18,7 @@
 }
 
 .display-1 {
-  font-family: 'Times New Roman', serif; /* O un font elegante che preferisci */
+  font-family: 'Times New Roman', serif; 
   letter-spacing: 2px;
 }
 
@@ -39,4 +39,10 @@
 
 .btn-success:hover {
   background-color: #3d5440;
+}
+
+.hero-section {
+  /* Invece di iniziare da zero, lasciamo lo spazio per la navbar */
+  margin-top: 0; 
+  transition: margin-top 0.3s ease-in-out;
 }

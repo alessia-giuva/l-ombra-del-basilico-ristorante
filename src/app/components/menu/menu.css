@@ -21,7 +21,7 @@
 .dots {
   flex-grow: 1;
   border-bottom: 1px dotted #ccc;
-  height: 14px; /* Allinea i puntini al testo */
+  height: 14px; 
 }
 
 .dish-price {
@@ -39,7 +39,7 @@
 }
 
 .menu-item {
-    margin-bottom: 2.5rem; /* Aumenta lo spazio tra un piatto e l'altro */
+    margin-bottom: 2.5rem; 
 }
 
 .category-title {

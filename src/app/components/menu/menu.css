@@ -1,0 +1,48 @@
+.menu-header {
+  height: 40vh;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+              url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=2000') no-repeat center center;
+  background-size: cover;
+}
+
+.category-title {
+  font-family: 'Georgia', serif;
+  border-bottom: 2px solid #4E6B52;
+  display: inline-block;
+  padding-bottom: 5px;
+  letter-spacing: 2px;
+}
+
+.dish-name {
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.dots {
+  flex-grow: 1;
+  border-bottom: 1px dotted #ccc;
+  height: 14px; /* Allinea i puntini al testo */
+}
+
+.dish-price {
+  font-size: 1.1rem;
+}
+
+.dish-desc {
+  font-style: italic;
+  margin-top: 2px;
+}
+
+/* Colore verde basilico coerente */
+.text-success {
+  color: #4E6B52 !important;
+}
+
+.menu-item {
+    margin-bottom: 2.5rem; /* Aumenta lo spazio tra un piatto e l'altro */
+}
+
+.category-title {
+    margin-top: 2rem;
+    margin-bottom: 3rem !important;
+}

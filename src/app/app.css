@@ -1,0 +1,41 @@
+/* Colore Verde Basilico per il Brand */
+.text-success {
+  color: #4E6B52 !important;
+}
+
+/* Link attivi nella navbar */
+.nav-link.active {
+  color: #4E6B52 !important;
+  font-weight: bold;
+}
+
+/* Pulsante WhatsApp fluttuante come nella pizzeria */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: white !important;
+  padding: 10px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  background-color: #128c7e;
+}
+
+main {
+  min-height: 80vh;
+}
+
+.nav-trasparente {
+  background-color: rgba(30, 30, 30, 0.8) !important; /* Grigio scuro ma trasparente */
+  backdrop-filter: blur(10px); /* Sfoca quello che passa sotto */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}

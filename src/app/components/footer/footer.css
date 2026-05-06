@@ -1,0 +1,30 @@
+.bg-dark-green {
+  background-color: #1B261D; /* Il nostro verde ombra */
+  color: #FCFAF7;
+}
+
+.text-cream { color: #FCFAF7; }
+
+.serif-title {
+  font-family: 'Bodoni Moda', serif;
+  font-weight: 700;
+}
+
+.tracking-widest {
+  letter-spacing: 3px;
+  color: #D4A373; /* Accento terra bruciata */
+}
+
+.social-icons i {
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.social-icons i:hover {
+  color: #D4A373;
+}
+
+.tiny-text {
+  font-size: 0.7rem;
+}

@@ -1,0 +1,29 @@
+<section class="menu-header text-center text-white d-flex align-items-center">
+  <div class="container position-relative">
+    <h2 class="display-3 fw-bold">Il Nostro Menu</h2>
+    <p class="lead">Materia prima selezionata e amore per la terra</p>
+  </div>
+</section>
+
+<section class="py-5 bg-white">
+  <div class="container">
+    <div class="row">
+      @for (cat of categorie; track cat.nome) {
+        <div class="col-lg-6 mb-5 px-4">
+          <h3 class="category-title text-success mb-4 text-uppercase">{{ cat.nome }}</h3>
+          
+          @for (piatto of cat.piatti; track piatto.nome) {
+            <div class="menu-item mb-4">
+              <div class="d-flex justify-content-between align-items-baseline">
+                <h5 class="dish-name mb-0 text-dark">{{ piatto.nome }}</h5>
+                <span class="dots mx-2"></span>
+                <span class="dish-price fw-bold text-success">{{ piatto.prezzo }}€</span>
+              </div>
+              <p class="dish-desc text-muted small italic">{{ piatto.desc }}</p>
+            </div>
+          }
+        </div>
+      }
+    </div>
+  </div>
+</section>

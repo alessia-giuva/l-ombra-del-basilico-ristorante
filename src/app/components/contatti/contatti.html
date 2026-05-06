@@ -1,0 +1,71 @@
+<section class="contatti-header text-center text-white d-flex align-items-center">
+  <div class="container">
+    <h2 class="display-3 fw-bold">Contattaci</h2>
+    <p class="lead">Siamo nel cuore di Foggia, pronti ad accoglierti.</p>
+  </div>
+</section>
+
+<section class="py-5 bg-white">
+  <div class="container">
+    <div class="row g-5">
+      
+      <!-- Info e Orari -->
+      <div class="col-lg-5">
+        <h3 class="serif-font text-success mb-4">Dove Trovarci</h3>
+        <p class="mb-2"><i class="bi bi-geo-alt-fill me-2 text-success"></i> Via del Basilico, 12 - 71121 Foggia (FG)</p>
+        <p class="mb-2"><i class="bi bi-telephone-fill me-2 text-success"></i> +39 0881 123 456</p>
+        <p class="mb-4"><i class="bi bi-envelope-fill me-2 text-success"></i> info@lombradelbasilico.it</p>
+
+        <h3 class="serif-font text-success mb-3 mt-5">Orari di Apertura</h3>
+        <ul class="list-unstyled">
+          <li class="d-flex justify-content-between border-bottom py-2"><span>Lun - Ven:</span> <strong>12:30 - 15:00 / 19:30 - 23:00</strong></li>
+          <li class="d-flex justify-content-between border-bottom py-2"><span>Sabato:</span> <strong>19:30 - 00:00</strong></li>
+          <li class="d-flex justify-content-between py-2 text-danger"><span>Domenica:</span> <strong>Chiuso</strong></li>
+        </ul>
+      </div>
+
+      <!-- Modulo di Contatto -->
+      <div class="col-lg-7">
+        <div class="card border-0 shadow-sm p-4 bg-light">
+          <h3 class="serif-font text-success mb-4">Inviaci un Messaggio</h3>
+          
+          <div *ngIf="inviato" class="alert alert-success">
+            Grazie! Ti risponderemo il prima possibile.
+          </div>
+
+          <form (submit)="inviaMessaggio()">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <input type="text" class="form-control rounded-0" placeholder="Il tuo Nome" required>
+              </div>
+              <div class="col-md-6">
+                <input type="email" class="form-control rounded-0" placeholder="La tua Email" required>
+              </div>
+              <div class="col-12">
+                <textarea class="form-control rounded-0" rows="5" placeholder="Come possiamo aiutarti?" required></textarea>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-success btn-lg rounded-0 w-100">INVIA MESSAGGIO</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Mappa Estetica -->
+<!-- Mappa Reale Google Maps -->
+<section class="google-map-container">
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47913.3953460499!2d15.514751457186934!3d41.45903820253456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13374566795f68f1%3A0x6b7724285e64a132!2sFoggia%20FG!5e0!3m2!1sit!2sit!4v1714838000000!5m2!1sit!2sit" 
+    width="100%" 
+    height="450" 
+    style="border:0;" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</section>

@@ -1,0 +1,28 @@
+.contatti-header {
+  height: 35vh;
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+              url('https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?q=80&w=2000') no-repeat center center;
+  background-size: cover;
+}
+
+.text-success { color: #4E6B52 !important; }
+.btn-success { background-color: #4E6B52; border: none; }
+.btn-success:hover { background-color: #3d5440; }
+
+.serif-font { font-family: 'Georgia', serif; font-weight: bold; }
+
+.form-control:focus {
+  border-color: #4E6B52;
+  box-shadow: 0 0 0 0.25rem rgba(78, 107, 82, 0.25);
+}
+
+.google-map-container {
+  line-height: 0; /* Rimuove piccoli spazi bianchi sotto l'iframe */
+  filter: grayscale(20%) contrast(90%); /* Opzionale: rende la mappa più elegante e meno "accesa" */
+  border-top: 4px solid #4E6B52; /* Un richiamo al colore del brand */
+  transition: filter 0.3s ease;
+}
+
+.google-map-container:hover {
+  filter: grayscale(0%); /* Torna a colori pieni quando l'utente ci passa sopra */
+}

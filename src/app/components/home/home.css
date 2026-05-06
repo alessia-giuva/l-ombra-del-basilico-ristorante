@@ -1,9 +1,10 @@
 .hero-section {
-  height: 100vh;
+  min-height: 100vh; 
   background: url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=2000') no-repeat center center;
   background-size: cover;
   position: relative;
-  margin-top: -76px; 
+  margin-top: 0; 
+  transition: margin-top 0.3s ease-in-out;
 }
 
 .overlay {
@@ -42,7 +43,7 @@
 }
 
 .hero-section {
-  /* Invece di iniziare da zero, lasciamo lo spazio per la navbar */
+
   margin-top: 0; 
   transition: margin-top 0.3s ease-in-out;
 }

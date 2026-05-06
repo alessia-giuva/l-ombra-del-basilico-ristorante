@@ -35,7 +35,40 @@ main {
 }
 
 .nav-trasparente {
-  background-color: rgba(30, 30, 30, 0.8) !important; /* Grigio scuro ma trasparente */
-  backdrop-filter: blur(10px); /* Sfoca quello che passa sotto */
+  background-color: rgba(30, 30, 30, 0.8) !important;
+  backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Regole per il Logo */
+.logo-navbar {
+  width: 45px;
+  height: 45px;
+  transition: all 0.3s ease;
+}
+
+/* Gestione Mobile */
+@media (max-width: 991px) {
+  .navbar-brand-responsive {
+    margin-right: 0; /* Toglie spazio inutile a destra */
+    display: flex;
+    align-items: center;
+  }
+
+  .brand-text {
+    font-size: 0.9rem; /* Testo più piccolo su mobile */
+    letter-spacing: -0.5px; /* Stringe leggermente le lettere */
+  }
+
+  .logo-navbar {
+    width: 35px; /* Logo più piccolo su mobile */
+    height: 35px;
+  }
+}
+
+/* Per telefoni piccolissimi (sotto i 380px) */
+@media (max-width: 375px) {
+  .brand-text {
+    font-size: 0.8rem;
+  }
 }

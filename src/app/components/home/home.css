@@ -1,10 +1,23 @@
-/* --- HERO SECTION --- */
+
 .hero-section {
-  min-height: 100vh; 
-  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
-              url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=2000') no-repeat center center;
+
+  height: 100vh;
+  height: 100dvh; 
+  
+  /* Centriamo e blocchiamo l'immagine */
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+                    url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=2000');
+  background-repeat: no-repeat;
+  background-position: center center;
   background-size: cover;
-background-attachment: scroll;
+  
+  background-attachment: scroll;
+  transition: none !important; 
+  
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .badge-botanico {

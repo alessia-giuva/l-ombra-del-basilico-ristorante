@@ -15,8 +15,9 @@
 }
 
 .brand-text {
-  letter-spacing: 1px;
-  color: #4E6B52; 
+  white-space: nowrap; 
+  line-height: 1;
+  display: flex;
 }
 
 .serif-title {
@@ -40,17 +41,43 @@
 
 @media (max-width: 991px) {
   .navbar-collapse {
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: #1B261D !important; 
+    
+  
+    border-top: 1px solid rgba(212, 163, 115, 0.3); 
+    
     margin-top: 10px;
-    background: rgba(20, 20, 20, 0.98);
+    border-radius: 8px; 
+    padding: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
   }
+
   .nav-link {
     padding: 15px 0;
     text-align: center;
     margin-left: 0;
+    color: #FCFAF7 !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05); 
+  }
+
+  
+  .navbar-nav li:last-child .nav-link {
+    border-bottom: none;
   }
 }
 
+@media (max-width: 380px) {
+  .serif-title {
+    font-size: 0.9rem !important; 
+    letter-spacing: 0.5px;
+  }
+  
+  .logo-navbar {
+    height: 35px !important; 
+    width: 35px !important;
+    margin-right: 5px !important;
+  }
+}
 
 .text-gold {
   color: #D4A373 !important;
@@ -69,8 +96,11 @@
 }
 
 .navbar-brand {
-  padding-left: 0;
-  margin-left: 0;
+  display: flex !important;
+  align-items: center;
+  flex-wrap: nowrap; 
+  margin-right: 0;
+  padding-right: 0;
 }
 
 .logo-navbar {
@@ -82,7 +112,7 @@
   transition: transform 0.3s ease;
 }
 
-/* Effetto al passaggio del mouse sul logo */
+
 .navbar-brand:hover .logo-navbar {
   transform: scale(1.1) rotate(5deg);
 }

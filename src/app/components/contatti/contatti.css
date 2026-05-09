@@ -26,3 +26,44 @@
 .google-map-container:hover {
   filter: grayscale(0%); 
 }
+
+
+.map-wrapper {
+  position: relative;
+  border: 15px solid #ffffff; 
+  border-radius: 8px;
+  overflow: hidden;
+  outline: 1px solid rgba(78, 107, 82, 0.2); 
+  line-height: 0;
+}
+
+.google-map {
+  filter: sepia(20%) hue-rotate(70deg) contrast(90%) brightness(95%);
+  transition: all 0.5s ease;
+}
+
+.map-wrapper:hover .google-map {
+  filter: grayscale(0%) contrast(100%) brightness(100%);
+  transform: scale(1.02); 
+}
+
+
+.map-border-decoration {
+  height: 5px;
+  background-color: #4E6B52;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 10;
+}
+
+
+.card.bg-light {
+  border-left: 5px solid #4E6B52 !important; 
+  border-radius: 0;
+}
+
+.serif-font {
+  font-family: 'Bodoni Moda', 'Georgia', serif;
+  letter-spacing: 1px;
+}

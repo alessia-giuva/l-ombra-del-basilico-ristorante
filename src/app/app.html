@@ -1,47 +1,7 @@
-
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm nav-trasparente">
-  <div class="container d-flex justify-content-between align-items-center flex-wrap">
-    
-    <a class="navbar-brand fw-bold text-success d-flex align-items-center" routerLink="/">
-      <img src="images/logoo.png" alt="Logo" class="me-2 logo-navbar">
-      <span class="brand-text">L'OMBRA DEL BASILICO</span>
-    </a>
-
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-
-    <div class="collapse navbar-collapse" id="navbarNav" #nav>
-     <ul class="navbar-nav ms-auto pt-3 pb-2">
-        <li class="nav-item">
-          <!-- 3. TRUCCO: (click)="nav.classList.remove('show')" serve a chiudere il menu quando clicchi una voce sul cellulare -->
-          <a class="nav-link" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="nav.classList.remove('show')">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/menu" routerLinkActive="active" (click)="nav.classList.remove('show')">Menu</a>
-        </li>
-        <li class="nav-item">
-          <!-- 4. CORREZIONE: Ho tolto lo spazio dopo {exact: true} -->
-          <a class="nav-link" routerLink="/contatti" routerLinkActive="active" (click)="nav.classList.remove('show')">Contatti</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
+<app-navbar></app-navbar>
 
 <main>
   <router-outlet></router-outlet>
 </main>
 
-<footer class="bg-dark text-white text-center py-4 mt-auto">
-  <div class="container">
-    <p class="mb-0">&copy; 2026 L'Ombra del Basilico - Cucina Botanica</p>
-    <small class="text-muted">L'eleganza della terra nel cuore di Foggia</small>
-  </div>
-  
-  <a href="https://wa.me/390881123456" class="whatsapp-float shadow-lg" target="_blank">
-    <i class="bi bi-whatsapp"></i>
-    <span class="d-none d-md-inline ms-2">Prenota su WhatsApp</span>
-  </a>
-</footer>
+<app-footer></app-footer>

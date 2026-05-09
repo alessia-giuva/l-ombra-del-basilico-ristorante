@@ -1,17 +1,28 @@
-<nav class="navbar navbar-expand-lg fixed-top custom-nav">
-  <div class="container">
-    <a class="navbar-brand serif-title" routerLink="/">L'Ombra del Basilico</a>
-    
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navNav">
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm nav-trasparente">
+  <div class="container d-flex justify-content-between align-items-center flex-wrap">
+
+   <a class="navbar-brand fw-bold d-flex align-items-center" routerLink="/">
+ <img src="favicon.jpg" alt="Logo L'Ombra del Basilico" class="me-2 logo-navbar">
+  
+  <span class="brand-text serif-title">
+    <span class="text-gold">L'OMBRA </span> <span class="text-cream">DEL BASILICO</span>
+  </span>
+</a>
+
+    <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navNav">
-      <ul class="navbar-nav ms-auto align-items-center">
-        <li class="nav-item"><a class="nav-link" routerLink="/">HOME</a></li>
-        <li class="nav-item"><a class="nav-link" routerLink="/menu">MENU</a></li>
+    <div class="collapse navbar-collapse" id="navbarNav" #nav>
+      <ul class="navbar-nav ms-auto pt-3 pb-2">
         <li class="nav-item">
-          <a class="btn btn-reserve ms-lg-3" href="#prenota">PRENOTA UN TAVOLO</a>
+          <a class="nav-link text-uppercase small tracking-widest" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="nav.classList.remove('show')">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-uppercase small tracking-widest" routerLink="/menu" routerLinkActive="active" (click)="nav.classList.remove('show')">Menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-uppercase small tracking-widest" routerLink="/contatti" routerLinkActive="active" (click)="nav.classList.remove('show')">Contatti</a>
         </li>
       </ul>
     </div>

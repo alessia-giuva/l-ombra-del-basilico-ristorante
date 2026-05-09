@@ -1,1 +1,101 @@
 
+.nav-trasparente {
+  min-height: 75px; 
+   background-color: #1B261D; 
+  position: sticky !important;
+  top: 0;
+  width: 100%;
+  z-index: 2000;
+}
+
+.logo-navbar {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+}
+
+.brand-text {
+  letter-spacing: 1px;
+  color: #4E6B52; 
+}
+
+.serif-title {
+  font-family: 'Bodoni Moda', serif;
+}
+
+.nav-link {
+  color: #FCFAF7 !important;
+  transition: 0.3s;
+  margin-left: 15px;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: #D4A373 !important; 
+  font-weight: bold;
+}
+
+.tracking-widest {
+  letter-spacing: 2px;
+}
+
+@media (max-width: 991px) {
+  .navbar-collapse {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 10px;
+    background: rgba(20, 20, 20, 0.98);
+  }
+  .nav-link {
+    padding: 15px 0;
+    text-align: center;
+    margin-left: 0;
+  }
+}
+
+
+.text-gold {
+  color: #D4A373 !important;
+}
+
+
+.text-cream {
+  color: #FCFAF7 !important;
+}
+
+
+.serif-title {
+  font-family: 'Bodoni Moda', 'Playfair Display', serif;
+  letter-spacing: 2px; 
+  font-size: 1.2rem;  
+}
+
+.navbar-brand {
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.logo-navbar {
+  height: 50px;       
+  width: 50px;       
+  object-fit: cover;  
+  border-radius: 50%; 
+  border: 1px solid #D4A373; 
+  transition: transform 0.3s ease;
+}
+
+/* Effetto al passaggio del mouse sul logo */
+.navbar-brand:hover .logo-navbar {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.brand-text {
+  line-height: 1; 
+}
+
+.text-gold { color: #D4A373 !important; }
+.text-cream { color: #FCFAF7 !important; }
+
+.serif-title {
+  font-family: 'Bodoni Moda', serif;
+  font-size: 1.25rem;
+  letter-spacing: 1px;
+}

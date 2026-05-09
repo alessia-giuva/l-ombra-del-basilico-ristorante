@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+/* Colori e Font utilizzabili in tutto il sito */
+.serif-title {
+  font-family: 'Bodoni Moda', serif;
+}
+
+.text-gold { color: #D4A373 !important; }
+.text-cream { color: #FCFAF7 !important; }
+
+/* Rende lo scroll fluido quando torni in cima */
+html {
+  scroll-behavior: smooth;
+}
